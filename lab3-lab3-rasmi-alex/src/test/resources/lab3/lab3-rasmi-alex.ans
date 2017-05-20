@@ -1,0 +1,23 @@
+# Evaluating ...
+10
+7
+undefined
+# Stepping ...
+##    0: ConstDecl(b,N(5.0),ConstDecl(foo,Function(None,x,ConstDecl(a,Binary(Plus,Var(b),N(5.0)),Var(a))),ConstDecl(boo,Function(None,x,ConstDecl(b,N(2.0),Call(Var(foo),N(1.0)))),Binary(Seq,Print(Call(Var(foo),N(1.0))),Print(Call(Var(boo),N(1.0)))))))
+##    1: ConstDecl(foo,Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),ConstDecl(boo,Function(None,x,ConstDecl(b,N(2.0),Call(Var(foo),N(1.0)))),Binary(Seq,Print(Call(Var(foo),N(1.0))),Print(Call(Var(boo),N(1.0))))))
+##    2: ConstDecl(boo,Function(None,x,ConstDecl(b,N(2.0),Call(Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),N(1.0)))),Binary(Seq,Print(Call(Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),N(1.0))),Print(Call(Var(boo),N(1.0)))))
+##    3: Binary(Seq,Print(Call(Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),N(1.0))),Print(Call(Function(None,x,ConstDecl(b,N(2.0),Call(Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),N(1.0)))),N(1.0))))
+##    4: Binary(Seq,Print(ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),Print(Call(Function(None,x,ConstDecl(b,N(2.0),Call(Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),N(1.0)))),N(1.0))))
+##    5: Binary(Seq,Print(ConstDecl(a,N(10.0),Var(a))),Print(Call(Function(None,x,ConstDecl(b,N(2.0),Call(Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),N(1.0)))),N(1.0))))
+##    6: Binary(Seq,Print(N(10.0)),Print(Call(Function(None,x,ConstDecl(b,N(2.0),Call(Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),N(1.0)))),N(1.0))))
+10
+##    7: Binary(Seq,Undefined,Print(Call(Function(None,x,ConstDecl(b,N(2.0),Call(Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),N(1.0)))),N(1.0))))
+##    8: Print(Call(Function(None,x,ConstDecl(b,N(2.0),Call(Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),N(1.0)))),N(1.0)))
+##    9: Print(ConstDecl(b,N(2.0),Call(Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),N(1.0))))
+##   10: Print(Call(Function(None,x,ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a))),N(1.0)))
+##   11: Print(ConstDecl(a,Binary(Plus,N(5.0),N(5.0)),Var(a)))
+##   12: Print(ConstDecl(a,N(10.0),Var(a)))
+##   13: Print(N(10.0))
+10
+##   14: Undefined
+undefined

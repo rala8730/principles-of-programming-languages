@@ -1,0 +1,14 @@
+const b = 5;
+
+const foo = function (x){
+    const a = b + 5;
+    return a;
+}
+
+const boo = function (x){
+    const b = 2;
+    return foo(1);
+}
+
+console.log(foo(1))
+console.log(boo(1))

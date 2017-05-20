@@ -1,0 +1,7 @@
+const f = function(a: var number): number { a = a + a; return a * a }
+
+const x = 10
+console.log(x)
+const y = f(x)
+console.log(x)
+console.log(y)
